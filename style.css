@@ -1,0 +1,61 @@
+table {
+    height: 90vh;
+    width: 100%;
+}
+
+megatext {
+    width:100%;
+    font-size: 200px;
+    height: 100vh; /* Hauteur de la page à 100% de la vue */
+    display: flex; /* Utilisation de flexbox pour centrer verticalement et horizontalement */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+}
+
+td {
+    font-size: 30px;
+    border: 2px solid;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+tr {
+    height: 17%;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333333;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+timer {
+    border: 2px solid;
+    padding: 1px;
+    font-size: 35px;
+    color: orange;
+}
+
+
+article {
+    border: 1px solid;
+}

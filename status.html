@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="background-image: url('wood.jpg');background-repeat: no-repeat;background-size:100% 100%;">
+    <megatext>
+        <center>
+            <br>
+            <br>
+            <img id="panel" src="">
+            <br>
+            <span id="time" style="color:white;"></span>
+        </center>
+
+    </megatext>
+</body>
+
+<script type="text/javascript" src="functions.js"></script>
+<script type="text/javascript" src="calendar.js"></script>
+<script type="text/javascript" src="status.js"></script>
+<script type="text/javascript">
+    current_date = new Date();
+    day = current_date.getDay();
+    hour = current_date.getHours();
+
+    time_formatted = current_date.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' });
+    document.getElementById("time").innerHTML = time_formatted;
+    generate_panel(day,hour);
+    setTimeout(function () {change_page("/index.html");}, 10000);
+</script>
+
+</html>
